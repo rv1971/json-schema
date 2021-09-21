@@ -23,9 +23,9 @@ use Opis\JsonSchema\{ValidationContext, Schema};
 class UnresolvedException extends RuntimeException implements SchemaException
 {
 
-    protected Schema $schema;
+    protected $schema;
 
-    protected ValidationContext $context;
+    protected $context;
 
     /**
      * @param string $message

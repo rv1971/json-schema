@@ -28,7 +28,7 @@ class MinLengthKeyword implements Keyword
 {
     use ErrorTrait;
 
-    protected int $length;
+    protected $length;
 
     /**
      * @param int $length

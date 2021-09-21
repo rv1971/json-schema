@@ -23,7 +23,7 @@ use Opis\JsonSchema\ContentMediaType;
 class ContentMediaTypeResolver
 {
     /** @var callable[]|ContentMediaType[] */
-    protected array $media;
+    protected $media;
 
     /** @var callable|null|ContentMediaType */
     protected $defaultMedia = null;

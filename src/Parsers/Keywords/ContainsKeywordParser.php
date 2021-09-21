@@ -24,8 +24,8 @@ use Opis\JsonSchema\Parsers\{KeywordParser, SchemaParser};
 
 class ContainsKeywordParser extends KeywordParser
 {
-    protected ?string $minContains = null;
-    protected ?string $maxContains = null;
+    protected $minContains = null;
+    protected $maxContains = null;
 
     public function __construct(string $keyword, ?string $minContains = null, ?string $maxContains = null)
     {

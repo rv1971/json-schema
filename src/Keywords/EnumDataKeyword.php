@@ -23,7 +23,7 @@ use Opis\JsonSchema\Errors\ValidationError;
 class EnumDataKeyword extends EnumKeyword
 {
 
-    protected JsonPointer $value;
+    protected $value;
 
     /**
      * @param JsonPointer $value

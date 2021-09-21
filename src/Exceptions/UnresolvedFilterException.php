@@ -22,9 +22,9 @@ use Opis\JsonSchema\{ValidationContext, Schema};
 class UnresolvedFilterException extends UnresolvedException
 {
 
-    protected string $filter;
+    protected $filter;
 
-    protected string $type;
+    protected $type;
 
     /**
      * @param string $filter

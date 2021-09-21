@@ -31,7 +31,7 @@ class FiltersKeyword implements Keyword
     use ErrorTrait;
 
     /** @var array|object[] */
-    protected array $filters;
+    protected $filters;
 
     /**
      * @param object[] $filters

@@ -32,7 +32,7 @@ class AdditionalItemsKeyword implements Keyword
     /** @var bool|object|Schema */
     protected $value;
 
-    protected int $index;
+    protected $index;
 
     /**
      * @param bool|object $value

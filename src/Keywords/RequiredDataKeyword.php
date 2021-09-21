@@ -23,7 +23,7 @@ use Opis\JsonSchema\Errors\ValidationError;
 class RequiredDataKeyword extends RequiredKeyword
 {
 
-    protected JsonPointer $value;
+    protected $value;
 
     /** @var callable|null */
     protected $filter;

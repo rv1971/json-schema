@@ -22,7 +22,7 @@ use Opis\JsonSchema\{Helper, ValidationContext, Pragma};
 class CastPragma implements Pragma
 {
 
-    protected string $cast;
+    protected $cast;
 
     /** @var callable */
     protected $func;

@@ -23,7 +23,7 @@ use Opis\JsonSchema\Info\SchemaInfo;
 class ParseException extends RuntimeException implements SchemaException
 {
 
-    protected ?SchemaInfo $info = null;
+    protected $info = null;
 
     /**
      * @param string $message

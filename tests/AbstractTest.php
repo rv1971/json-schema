@@ -27,9 +27,9 @@ use Opis\JsonSchema\Parsers\{Vocabulary, SchemaParser};
 
 abstract class AbstractTest extends TestCase
 {
-    protected static ?Validator $validator = null;
+    protected static $validator = null;
 
-    protected string $currentDraft = '';
+    protected $currentDraft = '';
 
     protected static function validator(): Validator
     {

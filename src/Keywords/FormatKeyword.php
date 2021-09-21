@@ -29,10 +29,10 @@ class FormatKeyword implements Keyword
 {
     use ErrorTrait;
 
-    protected ?string $name;
+    protected $name;
 
     /** @var callable[]|Format[] */
-    protected ?array $types;
+    protected $types;
 
     /**
      * @param string $name

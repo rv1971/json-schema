@@ -25,7 +25,7 @@ use Opis\JsonSchema\Exceptions\SchemaException;
 final class ExceptionSchema extends AbstractSchema
 {
 
-    private SchemaException $exception;
+    private $exception;
 
     /**
      * @param SchemaInfo $info

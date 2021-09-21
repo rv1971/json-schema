@@ -22,10 +22,10 @@ use Countable, Iterator;
 class ErrorContainer implements Countable, Iterator
 {
 
-    protected int $maxErrors;
+    protected $maxErrors;
 
     /** @var ValidationError[] */
-    protected array $errors = [];
+    protected $errors = [];
 
     /**
      * ErrorContainer constructor.

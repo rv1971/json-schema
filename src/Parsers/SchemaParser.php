@@ -69,13 +69,13 @@ class SchemaParser
     ];
 
     /** @var array */
-    protected array $options;
+    protected $options;
 
     /** @var Draft[] */
-    protected array $drafts;
+    protected $drafts;
 
     /** @var array */
-    protected array $resolvers;
+    protected $resolvers;
 
     /**
      * @param array $resolvers

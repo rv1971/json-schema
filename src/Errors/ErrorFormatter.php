@@ -208,7 +208,10 @@ class ErrorFormatter
      */
     public function formatErrorMessage(ValidationError $error, ?string $message = null): string
     {
-        $message ??= $error->message();
+        if (!isset($message)) {
+            $message = $error->message();
+        }
+
         $args = $this->getDefaultArgs($error) + $error->args();
 
         if (!$args) {

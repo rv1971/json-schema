@@ -23,7 +23,7 @@ use Opis\JsonSchema\Variables;
 class GlobalsPragma implements Pragma
 {
 
-    protected Variables $globals;
+    protected $globals;
 
     /**
      * @param Variables $globals

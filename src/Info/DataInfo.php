@@ -24,18 +24,18 @@ class DataInfo
     /** @var mixed */
     protected $value;
 
-    protected ?string $type;
+    protected $type;
 
     /** @var mixed */
     protected $root;
 
     /** @var string[]|int[] */
-    protected array $path;
+    protected $path;
 
-    protected ?DataInfo $parent = null;
+    protected $parent = null;
 
     /** @var string[]|int[]|null */
-    protected ?array $fullPath = null;
+    protected $fullPath = null;
 
     /**
      * DataInfo constructor.

@@ -24,7 +24,7 @@ use Opis\JsonSchema\KeywordValidator;
 
 final class EmptySchema extends AbstractSchema
 {
-    protected ?KeywordValidator $keywordValidator;
+    protected $keywordValidator;
 
     /**
      * @inheritDoc

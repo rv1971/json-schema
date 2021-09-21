@@ -24,8 +24,8 @@ use Opis\JsonSchema\Resolvers\{SchemaResolver};
 
 class Validator
 {
-    protected SchemaLoader $loader;
-    protected int $maxErrors = 1;
+    protected $loader;
+    protected $maxErrors = 1;
 
     /**
      * @param SchemaLoader|null $loader

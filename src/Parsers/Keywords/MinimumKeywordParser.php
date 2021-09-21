@@ -32,7 +32,7 @@ class MinimumKeywordParser extends KeywordParser
 {
     use DataKeywordTrait;
 
-    protected ?string $exclusiveKeyword;
+    protected $exclusiveKeyword;
 
     /**
      * @param string $keyword

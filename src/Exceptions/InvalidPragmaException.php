@@ -22,7 +22,7 @@ use Opis\JsonSchema\Info\SchemaInfo;
 class InvalidPragmaException extends InvalidKeywordException
 {
 
-    protected string $pragma;
+    protected $pragma;
 
     /**
      * InvalidPragmaException constructor.

@@ -23,7 +23,7 @@ use Opis\JsonSchema\Errors\ValidationError;
 final class PragmaKeywordValidator extends AbstractKeywordValidator
 {
     /** @var Pragma[] */
-    protected array $pragmas = [];
+    protected $pragmas = [];
 
     /**
      * @param Pragma[] $pragmas

@@ -23,7 +23,7 @@ use Opis\JsonSchema\Errors\ValidationError;
 class MinPropertiesDataKeyword extends MinPropertiesKeyword
 {
 
-    protected JsonPointer $value;
+    protected $value;
 
     /**
      * @param JsonPointer $value

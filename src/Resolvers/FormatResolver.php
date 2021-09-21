@@ -25,7 +25,7 @@ use Opis\JsonSchema\Formats\{
 class FormatResolver
 {
     /** @var Format[][]|callable[][] */
-    protected array $formats = [];
+    protected $formats = [];
 
     /**
      * FormatResolver constructor.

@@ -30,11 +30,11 @@ abstract class AbstractRefKeyword implements Keyword
 {
     use ErrorTrait;
 
-    protected string $keyword;
-    protected ?Variables $mapper;
-    protected ?Variables $globals;
-    protected ?array $slots = null;
-    protected ?Uri $lastRefUri = null;
+    protected $keyword;
+    protected $mapper;
+    protected $globals;
+    protected $slots = null;
+    protected $lastRefUri = null;
 
     /**
      * @param Variables|null $mapper

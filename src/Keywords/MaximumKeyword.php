@@ -28,7 +28,7 @@ class MaximumKeyword implements Keyword
 {
     use ErrorTrait;
 
-    protected float $number;
+    protected $number;
 
     /**
      * @param float $number

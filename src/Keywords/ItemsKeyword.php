@@ -32,10 +32,10 @@ class ItemsKeyword implements Keyword
     /** @var bool|object|Schema|bool[]|object[]|Schema[] */
     protected $value;
 
-    protected int $count = -1;
-    protected bool $alwaysValid;
-    protected string $keyword;
-    protected int $startIndex;
+    protected $count = -1;
+    protected $alwaysValid;
+    protected $keyword;
+    protected $startIndex;
 
     /**
      * @param bool|object|Schema|bool[]|object[]|Schema[] $value

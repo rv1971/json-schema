@@ -22,7 +22,7 @@ use Opis\JsonSchema\{ValidationContext, Pragma};
 class SlotsPragma implements Pragma
 {
 
-    protected array $slots;
+    protected $slots;
 
     /**
      * @param array $slots

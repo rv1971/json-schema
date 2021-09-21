@@ -30,7 +30,7 @@ class DependenciesKeyword implements Keyword
     use ErrorTrait;
 
     /** @var array|object[]|string[][] */
-    protected array $value;
+    protected $value;
 
     /**
      * @param object[]|string[][] $value

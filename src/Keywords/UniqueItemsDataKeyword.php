@@ -23,7 +23,7 @@ use Opis\JsonSchema\Errors\ValidationError;
 class UniqueItemsDataKeyword extends UniqueItemsKeyword
 {
 
-    protected JsonPointer $value;
+    protected $value;
 
     /**
      * @param JsonPointer $value

@@ -28,12 +28,12 @@ final class VariablesContainer implements Variables
      */
     private $vars;
 
-    private bool $parsed = false;
+    private $parsed = false;
 
-    private bool $hasRefs = false;
+    private $hasRefs = false;
 
     /** @var string[] */
-    private array $keys;
+    private $keys;
 
     /**
      * @param array|object $data

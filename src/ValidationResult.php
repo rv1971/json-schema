@@ -21,7 +21,7 @@ use Opis\JsonSchema\Errors\ValidationError;
 
 class ValidationResult
 {
-    protected ?ValidationError $error;
+    protected $error;
 
     public function __construct(?ValidationError $error)
     {

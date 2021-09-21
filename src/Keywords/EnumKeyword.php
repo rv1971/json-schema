@@ -29,7 +29,7 @@ class EnumKeyword implements Keyword
 {
     use ErrorTrait;
 
-    protected ?array $enum;
+    protected $enum;
 
     /**
      * @param array $enum

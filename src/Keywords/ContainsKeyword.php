@@ -30,8 +30,8 @@ class ContainsKeyword implements Keyword
 
     /** @var bool|object */
     protected $value;
-    protected ?int $min = null;
-    protected ?int $max = null;
+    protected $min = null;
+    protected $max = null;
 
     /**
      * @param bool|object $value

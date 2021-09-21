@@ -22,7 +22,7 @@ use Opis\JsonSchema\ContentEncoding;
 class ContentEncodingResolver
 {
     /** @var callable[]|ContentEncoding[] */
-    protected array $list;
+    protected $list;
 
     /** @var callable|ContentEncoding|null */
     protected $defaultEncoding = null;

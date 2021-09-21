@@ -30,8 +30,8 @@ class AnyOfKeyword implements Keyword
     use ErrorTrait;
 
     /** @var bool[]|object[] */
-    protected array $value;
-    protected bool $alwaysValid;
+    protected $value;
+    protected $alwaysValid;
 
     /**
      * @param bool[]|object[] $value

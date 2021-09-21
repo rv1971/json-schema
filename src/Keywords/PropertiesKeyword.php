@@ -28,8 +28,8 @@ class PropertiesKeyword implements Keyword
 {
     use IterableDataValidationTrait;
 
-    protected array $properties;
-    protected array $propertyKeys;
+    protected $properties;
+    protected $propertyKeys;
 
     /**
      * @param array $properties

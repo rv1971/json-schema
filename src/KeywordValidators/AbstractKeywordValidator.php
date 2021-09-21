@@ -22,7 +22,7 @@ use Opis\JsonSchema\KeywordValidator;
 abstract class AbstractKeywordValidator implements KeywordValidator
 {
 
-    protected ?KeywordValidator $next = null;
+    protected $next = null;
 
     /**
      * @inheritDoc

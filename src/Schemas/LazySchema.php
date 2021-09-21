@@ -24,9 +24,9 @@ use Opis\JsonSchema\Errors\ValidationError;
 final class LazySchema extends AbstractSchema
 {
 
-    private SchemaParser $parser;
+    private $parser;
 
-    private ?Schema $schema = null;
+    private $schema = null;
 
     /**
      * @param SchemaInfo $info

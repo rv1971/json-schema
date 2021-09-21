@@ -23,9 +23,9 @@ use Opis\JsonSchema\Uri;
 class DuplicateSchemaIdException extends RuntimeException implements SchemaException
 {
 
-    protected Uri $id;
+    protected $id;
 
-    protected ?object $data = null;
+    protected $data = null;
 
     /**
      * DuplicateSchemaIdException constructor.

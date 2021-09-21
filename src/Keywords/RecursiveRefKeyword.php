@@ -23,10 +23,10 @@ use Opis\JsonSchema\{Schema, ValidationContext, Variables, Uri};
 
 class RecursiveRefKeyword extends AbstractRefKeyword
 {
-    protected Uri $uri;
+    protected $uri;
     /** @var bool|null|Schema */
     protected $resolved = false;
-    protected string $anchor;
+    protected $anchor;
     protected $anchorValue;
 
     public function __construct(

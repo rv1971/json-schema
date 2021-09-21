@@ -26,9 +26,9 @@ class ContentEncodingKeyword implements Keyword
 {
     use ErrorTrait;
 
-    protected string $name;
+    protected $name;
 
-    protected ?ContentEncodingResolver $resolver;
+    protected $resolver;
 
     /** @var bool|null|callable|ContentEncoding */
     protected $encoding = false;

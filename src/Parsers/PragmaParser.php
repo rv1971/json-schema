@@ -23,7 +23,7 @@ use Opis\JsonSchema\Pragma;
 
 abstract class PragmaParser
 {
-    protected string $pragma;
+    protected $pragma;
 
     /**
      * @param string $pragma

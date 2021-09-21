@@ -28,8 +28,8 @@ class ItemsKeywordParser extends KeywordParser
     const ONLY_ARRAY = 2;
     const BOTH = 3;
 
-    protected int $mode;
-    protected ?string $startIndexKeyword;
+    protected $mode;
+    protected $startIndexKeyword;
 
     public function __construct(string $keyword, int $mode = self::BOTH, ?string $startIndexKeyword = null)
     {

@@ -23,7 +23,7 @@ use Opis\JsonSchema\{JsonPointer, Schema, ValidationContext, Variables};
 
 class PointerRefKeyword extends AbstractRefKeyword
 {
-    protected JsonPointer $pointer;
+    protected $pointer;
     /** @var bool|null|Schema */
     protected $resolved = false;
 

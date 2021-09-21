@@ -27,32 +27,32 @@ class ValidationContext
     protected $rootData;
 
     /** @var string[]|int[] */
-    protected array $currentDataPath = [];
+    protected $currentDataPath = [];
 
-    protected ?array $fullPath = null;
+    protected $fullPath = null;
 
-    protected array $globals;
+    protected $globals;
 
     /** @var mixed */
     protected $currentData = null;
 
-    protected ?self $parent = null;
+    protected $parent = null;
 
-    protected SchemaLoader $loader;
+    protected $loader;
 
-    protected ?Schema $sender = null;
+    protected $sender = null;
 
     /** @var object[]|null[]|null */
-    protected ?array $shared = null;
+    protected $shared = null;
 
     /** @var null|string[]|Schema[]|object[] */
-    protected ?array $slots = null;
+    protected $slots = null;
 
-    protected int $sharedIndex = -1;
+    protected $sharedIndex = -1;
 
-    protected int $pathIndex = 0;
+    protected $pathIndex = 0;
 
-    protected int $maxErrors = 1;
+    protected $maxErrors = 1;
 
     /**
      * @param $data
@@ -414,7 +414,11 @@ class ValidationContext
             return null;
         }
 
-        return $this->shared[$this->sharedIndex]['object'] ??= (object)[];
+        if (!isset($this->shared[$this->sharedIndex]['object'])) {
+            $this->shared[$this->sharedIndex]['object'] = (object)[];
+        }
+
+        return $this->shared[$this->sharedIndex]['object'];
     }
 
     public function schema(): ?Schema
@@ -485,7 +489,11 @@ class ValidationContext
             return null;
         }
 
-        return $this->sharedObject()->objectProperties ??= array_keys(get_object_vars($this->currentData()));
+        if (!isset($this->sharedObject()->objectProperties)) {
+            $this->sharedObject()->objectProperties = array_keys(get_object_vars($this->currentData()));
+        }
+
+        return $this->sharedObject()->objectProperties;
     }
 
     public function addCheckedProperties(?array $properties): bool

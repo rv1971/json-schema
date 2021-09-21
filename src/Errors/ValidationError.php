@@ -22,18 +22,18 @@ use Opis\JsonSchema\Info\DataInfo;
 
 class ValidationError
 {
-    protected string $keyword;
+    protected $keyword;
 
-    protected Schema $schema;
+    protected $schema;
 
-    protected DataInfo $data;
+    protected $data;
 
-    protected array $args;
+    protected $args;
 
-    protected string $message;
+    protected $message;
 
     /** @var ValidationError[] */
-    protected array $subErrors;
+    protected $subErrors;
 
     /**
      * @param string $keyword

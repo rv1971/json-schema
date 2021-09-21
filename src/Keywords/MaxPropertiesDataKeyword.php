@@ -23,7 +23,7 @@ use Opis\JsonSchema\Errors\ValidationError;
 class MaxPropertiesDataKeyword extends MaxPropertiesKeywords
 {
 
-    protected JsonPointer $value;
+    protected $value;
 
     /**
      * @inheritDoc

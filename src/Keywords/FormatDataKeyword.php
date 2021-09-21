@@ -24,9 +24,9 @@ use Opis\JsonSchema\Resolvers\FormatResolver;
 class FormatDataKeyword extends FormatKeyword
 {
 
-    protected JsonPointer $value;
+    protected $value;
 
-    protected FormatResolver $resolver;
+    protected $resolver;
 
     /**
      * @param JsonPointer $value

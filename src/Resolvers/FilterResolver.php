@@ -30,14 +30,14 @@ use Opis\JsonSchema\Filters\{CommonFilters,
 class FilterResolver
 {
     /** @var Filter[][][] */
-    protected array $filters = [];
+    protected $filters = [];
 
     /** @var FilterResolver[] */
-    protected array $ns = [];
+    protected $ns = [];
 
-    protected string $separator;
+    protected $separator;
 
-    protected string $defaultNS;
+    protected $defaultNS;
 
     /**
      * FilterResolver constructor.

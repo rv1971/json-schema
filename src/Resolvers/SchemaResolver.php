@@ -22,19 +22,19 @@ use Opis\JsonSchema\Uri;
 class SchemaResolver
 {
     /** @var bool[]|object[] */
-    protected array $raw = [];
+    protected $raw = [];
 
     /** @var string[] */
-    protected array $files = [];
+    protected $files = [];
 
     /** @var callable[] */
-    protected array $protocols = [];
+    protected $protocols = [];
 
     /** @var array */
-    protected array $prefixes = [];
+    protected $prefixes = [];
 
     /** @var array */
-    protected array $dirs = [];
+    protected $dirs = [];
 
     /**
      * @param Uri $uri

@@ -25,16 +25,16 @@ final class JsonPointer
     /** @var string */
     protected const UNESCAPED = '/~([^01]|$)/';
 
-    protected int $level = -1;
+    protected $level = -1;
 
-    protected int $shift = 0;
+    protected $shift = 0;
 
-    protected bool $fragment = false;
+    protected $fragment = false;
 
     /** @var string[]|int[] */
-    protected array $path;
+    protected $path;
 
-    protected ?string $str = null;
+    protected $str = null;
 
     final protected function __construct(array $path, int $level = -1, int $shift = 0, bool $fragment = false)
     {
@@ -184,7 +184,9 @@ final class JsonPointer
             return false;
         }
 
-        $count ??= count($path);
+        if (!isset($count)) {
+            $count = count($path);
+        }
 
         $last = $path[$count - 1];
 

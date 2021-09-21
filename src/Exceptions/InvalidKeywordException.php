@@ -22,7 +22,7 @@ use Opis\JsonSchema\Info\SchemaInfo;
 class InvalidKeywordException extends ParseException
 {
 
-    protected string $keyword;
+    protected $keyword;
 
     /**
      * InvalidKeywordException constructor.

@@ -24,7 +24,7 @@ use Opis\JsonSchema\Errors\ValidationError;
 final class BooleanSchema extends AbstractSchema
 {
 
-    private bool $data;
+    private $data;
 
     /**
      * @param SchemaInfo $info

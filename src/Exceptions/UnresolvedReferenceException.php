@@ -22,7 +22,7 @@ use Opis\JsonSchema\{ValidationContext, Schema};
 class UnresolvedReferenceException extends UnresolvedException
 {
 
-    protected string $ref;
+    protected $ref;
 
     /**
      * @param string $ref

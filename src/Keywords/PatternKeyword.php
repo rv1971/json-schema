@@ -24,9 +24,9 @@ class PatternKeyword implements Keyword
 {
     use ErrorTrait;
 
-    protected ?string $pattern;
+    protected $pattern;
 
-    protected ?string $regex;
+    protected $regex;
 
     /**
      * @param string $pattern

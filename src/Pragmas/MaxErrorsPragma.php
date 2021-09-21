@@ -22,7 +22,7 @@ use Opis\JsonSchema\{ValidationContext, Pragma};
 class MaxErrorsPragma implements Pragma
 {
 
-    protected int $maxErrors;
+    protected $maxErrors;
 
     /**
      * @param int $maxErrors

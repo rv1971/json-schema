@@ -28,7 +28,7 @@ class MaxPropertiesKeywords implements Keyword
 {
     use ErrorTrait;
 
-    protected int $count;
+    protected $count;
 
     /**
      * @param int $count

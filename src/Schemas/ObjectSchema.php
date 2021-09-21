@@ -24,16 +24,16 @@ use Opis\JsonSchema\KeywordValidators\CallbackKeywordValidator;
 
 class ObjectSchema extends AbstractSchema
 {
-    protected ?KeywordValidator $keywordValidator = null;
+    protected $keywordValidator = null;
 
     /** @var Keyword[]|null */
-    protected ?array $before = null;
+    protected $before = null;
 
     /** @var Keyword[]|null */
-    protected ?array $after = null;
+    protected $after = null;
 
     /** @var Keyword[][]|null */
-    protected ?array $types = null;
+    protected $types = null;
 
     /**
      * @param SchemaInfo $info

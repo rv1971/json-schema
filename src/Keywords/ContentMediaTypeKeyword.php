@@ -31,12 +31,12 @@ class ContentMediaTypeKeyword implements Keyword
 {
     use ErrorTrait;
 
-    protected string $name;
+    protected $name;
 
     /** @var bool|callable|ContentMediaType|null */
     protected $media = false;
 
-    protected ?ContentMediaTypeResolver $resolver;
+    protected $resolver;
 
     /**
      * @param string $name

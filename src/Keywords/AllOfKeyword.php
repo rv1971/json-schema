@@ -30,7 +30,7 @@ class AllOfKeyword implements Keyword
     use ErrorTrait;
 
     /** @var bool[]|object[] */
-    protected array $value;
+    protected $value;
 
     /**
      * @param bool[]|object[] $value

@@ -23,11 +23,11 @@ use Opis\JsonSchema\Variables;
 final class RefVariablesContainer implements Variables
 {
 
-    private JsonPointer $pointer;
+    private $pointer;
 
-    private ?Variables $each;
+    private $each;
 
-    private bool $hasDefault;
+    private $hasDefault;
 
     /** @var mixed */
     private $defaultValue;

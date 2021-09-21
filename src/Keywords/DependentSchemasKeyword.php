@@ -29,7 +29,7 @@ class DependentSchemasKeyword implements Keyword
     use OfTrait;
     use ErrorTrait;
 
-    protected array $value;
+    protected $value;
 
     public function __construct(object $value)
     {

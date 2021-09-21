@@ -24,11 +24,11 @@ use Opis\JsonSchema\{JsonPointer, Schema, SchemaLoader, Uri, ValidationContext, 
 
 class TemplateRefKeyword extends AbstractRefKeyword
 {
-    protected UriTemplate $template;
-    protected ?Variables $vars = null;
+    protected $template;
+    protected $vars = null;
     /** @var Schema[]|null[] */
-    protected ?array $cached = [];
-    protected bool $allowRelativeJsonPointerInRef;
+    protected $cached = [];
+    protected $allowRelativeJsonPointerInRef;
 
     public function __construct(
         UriTemplate $template,

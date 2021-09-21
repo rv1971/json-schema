@@ -27,9 +27,9 @@ use Opis\JsonSchema\Errors\ValidationError;
 class ErrorFormatterTest extends TestCase
 {
 
-    protected Validator $validator;
+    protected $validator;
 
-    protected ErrorFormatter $formatter;
+    protected $formatter;
 
     /**
      * @inheritDoc

@@ -29,7 +29,7 @@ class DependentRequiredKeyword implements Keyword
     use ErrorTrait;
 
     /** @var string[][] */
-    protected array $value;
+    protected $value;
 
     /**
      * @param string[][] $value

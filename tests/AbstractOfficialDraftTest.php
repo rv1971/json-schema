@@ -24,7 +24,7 @@ use PHPUnit\Framework\TestCase;
 
 abstract class AbstractOfficialDraftTest extends TestCase
 {
-    protected static CompliantValidator $validator;
+    protected static $validator;
 
     /**
      * @inheritDoc

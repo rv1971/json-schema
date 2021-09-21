@@ -21,7 +21,7 @@ use Opis\JsonSchema\{ValidationContext, Schema};
 
 class UnresolvedContentEncodingException extends UnresolvedException
 {
-    protected string $encoding;
+    protected $encoding;
 
     /**
      * @param string $encoding

@@ -24,16 +24,16 @@ class SchemaInfo
     /** @var bool|object */
     protected $data;
 
-    protected ?Uri $id;
+    protected $id;
 
-    protected ?Uri $root;
+    protected $root;
 
-    protected ?Uri $base;
+    protected $base;
 
     /** @var string[]|int[] */
-    protected array $path;
+    protected $path;
 
-    protected ?string $draft;
+    protected $draft;
 
     /**
      * @param object|bool $data

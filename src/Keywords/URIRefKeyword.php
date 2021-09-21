@@ -23,7 +23,7 @@ use Opis\JsonSchema\{Schema, Uri, ValidationContext, Variables};
 
 class URIRefKeyword extends AbstractRefKeyword
 {
-    protected Uri $uri;
+    protected $uri;
     /** @var bool|null|Schema */
     protected $resolved = false;
 

@@ -20,13 +20,13 @@ namespace Opis\JsonSchema\Parsers;
 abstract class Vocabulary
 {
     /** @var KeywordParser[] */
-    protected array $keywords;
+    protected $keywords;
 
     /** @var KeywordValidatorParser[] */
-    protected array $keywordValidators;
+    protected $keywordValidators;
 
     /** @var PragmaParser[] */
-    protected array $pragmas;
+    protected $pragmas;
 
     /**
      * @param KeywordParser[] $keywords

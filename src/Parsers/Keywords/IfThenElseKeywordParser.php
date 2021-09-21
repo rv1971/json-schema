@@ -25,9 +25,9 @@ use Opis\JsonSchema\Parsers\{KeywordParser, SchemaParser};
 class IfThenElseKeywordParser extends KeywordParser
 {
 
-    protected string $then;
+    protected $then;
 
-    protected string $else;
+    protected $else;
 
     /**
      * @param string $if

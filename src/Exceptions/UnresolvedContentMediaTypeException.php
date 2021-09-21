@@ -21,7 +21,7 @@ use Opis\JsonSchema\{ValidationContext, Schema};
 
 class UnresolvedContentMediaTypeException extends UnresolvedException
 {
-    protected string $media;
+    protected $media;
 
     /**
      * @param string $media

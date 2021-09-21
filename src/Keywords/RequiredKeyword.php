@@ -29,7 +29,7 @@ class RequiredKeyword implements Keyword
     use ErrorTrait;
 
     /** @var string[] */
-    protected ?array $required;
+    protected $required;
 
     /**
      * @param string[] $required

@@ -23,7 +23,7 @@ use Opis\JsonSchema\Info\SchemaInfo;
 abstract class AbstractSchema implements Schema
 {
 
-    protected SchemaInfo $info;
+    protected $info;
 
     /**
      * @param SchemaInfo $info

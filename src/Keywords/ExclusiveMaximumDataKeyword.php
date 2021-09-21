@@ -23,7 +23,7 @@ use Opis\JsonSchema\Errors\ValidationError;
 class ExclusiveMaximumDataKeyword extends ExclusiveMaximumKeyword
 {
 
-    protected JsonPointer $value;
+    protected $value;
 
     /**
      * @param JsonPointer $value

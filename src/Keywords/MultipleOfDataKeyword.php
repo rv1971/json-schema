@@ -23,7 +23,7 @@ use Opis\JsonSchema\Errors\ValidationError;
 class MultipleOfDataKeyword extends MultipleOfKeyword
 {
 
-    protected JsonPointer $value;
+    protected $value;
 
     /**
      * @param JsonPointer $value

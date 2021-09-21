@@ -23,7 +23,7 @@ use Opis\JsonSchema\Errors\ValidationError;
 class PatternDataKeyword extends PatternKeyword
 {
 
-    protected JsonPointer $value;
+    protected $value;
 
     /**
      * @param JsonPointer $value

@@ -25,10 +25,10 @@ class SlotsKeyword implements Keyword
     use ErrorTrait;
 
     /** @var bool[]|Schema[]|object[]|string[] */
-    protected array $slots;
+    protected $slots;
 
     /** @var string[] */
-    protected array $stack = [];
+    protected $stack = [];
 
     /**
      * @param string[]|bool[]|object[]|Schema[] $slots

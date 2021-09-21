@@ -23,7 +23,7 @@ use Opis\JsonSchema\Errors\ValidationError;
 class DefaultKeyword implements Keyword
 {
 
-    protected array $defaults;
+    protected $defaults;
 
     /**
      * @param array $defaults

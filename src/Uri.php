@@ -25,7 +25,7 @@ class Uri extends BaseUri implements JsonSerializable
     /**
      * @var bool Set this to true and the qs will always be sorted
      */
-    protected static bool $useNormalizedComponents = false;
+    protected static $useNormalizedComponents = false;
 
     public function __construct(array $components)
     {

@@ -27,17 +27,17 @@ use Opis\JsonSchema\Exceptions\DuplicateSchemaIdException;
 class SchemaLoader
 {
     /** @var Schema[]|object[] */
-    protected array $uriCache = [];
+    protected $uriCache = [];
 
-    protected SplObjectStorage $dataCache;
+    protected $dataCache;
 
-    protected SchemaParser $parser;
+    protected $parser;
 
-    protected ?SchemaResolver $resolver;
+    protected $resolver;
 
-    protected bool $decodeJsonString = false;
+    protected $decodeJsonString = false;
 
-    protected ?Uri $base = null;
+    protected $base = null;
 
     /**
      * @param null|SchemaParser $parser
@@ -104,7 +104,8 @@ class SchemaLoader
             $id = $this->createSchemaId($data);
         }
 
-        $handle_id = fn (Uri $id): ?Schema => $this->checkExistingUri($id);
+#        $handle_id = fn (Uri $id): ?Schema => $this->checkExistingUri($id);
+        $handle_id = function (Uri $id) { return $this->checkExistingUri($id); };
 
         $handle_object = function (object $data, Uri $id, string $draft): ?Schema {
             $this->handleObject($data, $id, null, null, [], $draft, (string)$id);

@@ -27,7 +27,7 @@ class RefKeywordParser extends KeywordParser
 {
     use VariablesTrait;
 
-    protected ?array $variations = null;
+    protected $variations = null;
 
     public function __construct(string $keyword, ?array $variations = null) {
         parent::__construct($keyword);

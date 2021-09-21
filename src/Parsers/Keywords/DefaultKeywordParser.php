@@ -25,7 +25,7 @@ use Opis\JsonSchema\Parsers\{KeywordParser, SchemaParser};
 class DefaultKeywordParser extends KeywordParser
 {
 
-    protected ?string $properties = null;
+    protected $properties = null;
 
     /**
      * @inheritDoc

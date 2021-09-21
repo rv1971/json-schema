@@ -26,7 +26,7 @@ class PatternPropertiesKeyword implements Keyword
     use IterableDataValidationTrait;
 
     /** @var bool[]|object[] */
-    protected array $value;
+    protected $value;
 
     /**
      * @param bool[]|object[] $value

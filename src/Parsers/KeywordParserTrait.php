@@ -23,7 +23,7 @@ use Opis\JsonSchema\Exceptions\InvalidKeywordException;
 trait KeywordParserTrait
 {
     /** @var string */
-    protected string $keyword;
+    protected $keyword;
 
     /**
      * @param string $keyword
