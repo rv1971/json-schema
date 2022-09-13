@@ -23,8 +23,8 @@
     "require": {
         "php": "^7.3.7 || ^7.4 || ^8.0",
         "ext-json": "*",
-        "opis/string": "^2.0",
-        "opis/uri": "^1.0"
+        "opis/string": "2.0.1+rv1971",
+        "opis/uri": "1.1.0+rv1971"
     },
     "require-dev": {
         "ext-bcmath": "*",
